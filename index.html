@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="TEMPER.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><i class="fas fa-thermometer-half"></i> Temperature Converter</h1>
+            <p>Convert between Celsius and Fahrenheit instantly</p>
+        </div>
+        
+        <div class="content">
+            <div class="converter-box">
+                <div class="temperature-input">
+                    <label for="celsius"><i class="fas fa-temperature-low"></i> Celsius (°C)</label>
+                    <div class="input-group">
+                        <span class="unit">°C</span>
+                        <input type="number" id="celsius" placeholder="Enter temperature" step="0.1" autocomplete="off">
+                    </div>
+                    <div class="temperature-scale">
+                        <span class="scale-label">Freezing: 0°C</span>
+                        <span class="scale-label">Boiling: 100°C</span>
+                    </div>
+                </div>
+                
+                <div class="swap-button-container">
+                    <button class="swap-btn" id="swapBtn" title="Swap conversion direction">
+                        <i class="fas fa-exchange-alt"></i>
+                    </button>
+                </div>
+                
+                <div class="temperature-input">
+                    <label for="fahrenheit"><i class="fas fa-temperature-high"></i> Fahrenheit (°F)</label>
+                    <div class="input-group">
+                        <span class="unit">°F</span>
+                        <input type="number" id="fahrenheit" placeholder="Enter temperature" step="0.1" autocomplete="off">
+                    </div>
+                    <div class="temperature-scale">
+                        <span class="scale-label">Freezing: 32°F</span>
+                        <span class="scale-label">Boiling: 212°F</span>
+                    </div>
+                </div>
+                
+                <div class="conversion-info">
+                    <i class="fas fa-info-circle"></i> <strong>Tip:</strong> The conversion will happen automatically as you type. You can also click the swap button to change conversion direction.
+                </div>
+            </div>
+            
+            <div class="formula-box">
+                <h3><i class="fas fa-calculator"></i> Conversion Formulas</h3>
+                <p>To convert Celsius to Fahrenheit:</p>
+                <div class="formula">°F = (°C × 9/5) + 32</div>
+                
+                <p style="margin-top: 20px;">To convert Fahrenheit to Celsius:</p>
+                <div class="formula">°C = (°F - 32) × 5/9</div>
+                
+                <div style="margin-top: 25px; padding-top: 20px; border-top: 1px solid #eee;">
+                    <p><strong>Key Temperature Points:</strong></p>
+                    <ul style="padding-left: 20px; margin-top: 10px;">
+                        <li>Absolute Zero: -273.15°C = -459.67°F</li>
+                        <li>Human Body Temperature: 37°C = 98.6°F</li>
+                        <li>Room Temperature: 20-25°C = 68-77°F</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Temperature Converter &copy; 2023 | Made with <i class="fas fa-heart" style="color: #b21f1f;"></i> | Conversion formulas based on standard temperature scales</p>
+        </div>
+    </div>
+</body>
+<script src="TEMPER.js"></script>
+</html>
